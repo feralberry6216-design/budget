@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NestEgg — The Rivera Family Budget</title>
+<meta name="description" content="NestEgg is the Rivera family's household budget: one place to see income, spending, budgets, savings goals and monthly reports.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#/dashboard" aria-label="NestEgg home">
+      <span class="brand-mark" aria-hidden="true">&#9679;</span>
+      <span class="brand-name">NestEgg</span>
+      <span class="brand-sub">Rivera family budget</span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#/dashboard" data-route="dashboard">Dashboard</a>
+      <a href="#/transactions" data-route="transactions">Transactions</a>
+      <a href="#/budgets" data-route="budgets">Budgets</a>
+      <a href="#/goals" data-route="goals">Goals</a>
+      <a href="#/reports" data-route="reports">Reports</a>
+    </nav>
+    <div class="header-month">
+      <label for="monthPicker">Month</label>
+      <select id="monthPicker" aria-label="Choose month"></select>
+    </div>
+  </div>
+</header>
+<main id="view" class="wrap" tabindex="-1"></main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p><strong>NestEgg</strong> — a household budget kept by the Rivera family. All figures are the family's own records for November 2026; edits are saved in this browser only.</p>
+    <p class="footer-note">Built as a single static site. No accounts, no tracking, no network requests.</p>
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="format.js"></script>
+<script src="charts.js"></script>
+<script src="views.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
